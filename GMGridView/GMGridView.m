@@ -1127,7 +1127,7 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 		{
 			NSMutableArray *itemSubViews = [[NSMutableArray alloc] initWithCapacity:_numberTotalItems];
 
-			for (UIView *v in[self subviews]) {
+			for (UIView *v in [_contentView subviews]) {
 				if ([v isKindOfClass:[GMGridViewCell class]]) {
 					[itemSubViews addObject:v];
 				}
