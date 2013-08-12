@@ -1179,13 +1179,11 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 			                    options:kDefaultAnimationOptions
 			                 animations: ^{
                                  self.contentSize = contentSize;
-                                 _contentView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
                              }
 
 			                 completion:nil];
 		} else {
 			self.contentSize = contentSize;
-			_contentView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
 		}
 	}
 }
